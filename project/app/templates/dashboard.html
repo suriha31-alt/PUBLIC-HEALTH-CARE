@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Dashboard</title>
+</head>
+<body style="font-family: Arial; margin: 20px;">
+
+{% load static %}
+
+<h1 style="text-align:center;">Healthcare Analytics Dashboard</h1>
+
+<h2>1. Hospital Occupancy</h2>
+<div style="text-align:center;">
+    <img src="{% static 'bar.png' %}" width="600">
+</div>
+<p><b>Insight:</b> {{ insights.bar }}</p>
+
+<hr>
+
+<h2>2. Urban vs Rural Distribution</h2>
+<div style="text-align:center;">
+    <img src="{% static 'pie.png' %}" width="600">
+</div>
+<p><b>Insight:</b> {{ insights.pie }}</p>
+
+<hr>
+
+<h2>3. Patient Inflow Trend</h2>
+<div style="text-align:center;">
+    <img src="{% static 'scatter.png' %}" width="600">
+</div>
+<p><b>Insight:</b> {{ insights.scatter }}</p>
+
+<hr>
+
+<h2>4. Emergency Cases Distribution</h2>
+<div style="text-align:center;">
+    <img src="{% static 'gap.png' %}" width="600">
+</div>
+<p><b>Insight:</b> {{ insights.gap }}</p>
+
+</body>
+</html>
